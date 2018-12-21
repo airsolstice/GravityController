@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+
+        <org.demo.gravity.VerticalSeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/value"
+            android:layout_width="100dp"
+            android:background="@color/colorAccent"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@id/seekBar"
+            android:text="vertical" />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
